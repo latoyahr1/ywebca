@@ -1,0 +1,16 @@
+{
+  "name": "ywca-workspace",
+  "version": "0.0.1",
+  "description": "YWCA Workspace for Latoya Robinson",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:latoyar1/ywebca.git"
+  },
+  "author": {
+    "name": "Latoya Robinson",
+    "email": "mzlppope@gmail.com",
+    "url": "https://github.com/latoyar1"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
