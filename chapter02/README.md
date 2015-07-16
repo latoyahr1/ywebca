@@ -1,4 +1,4 @@
-# Chapter 2: <small>Program Structure</small>
+        # Chapter 2: <small>Program Structure</small>
 
 Welcome to _Eloquent JavaScript_, Chapter 2!
 
