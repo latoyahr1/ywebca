@@ -1,0 +1,497 @@
+Latoyahs-MacBook-Air.local
+/Users/latoyahr/dev/ywebca
+
+
+Defining a Function exercises ***
+
+Parameters and Scopes exercises *******
+
+Nested Scope exercises ******************
+
+Functions as Values exercises **
+
+Declaration Notation exercises **
+
+The Call Stack exercises **
+
+Optional Arguments exercises **
+
+Closure exercises *X
+  Closures 2 XX
+    should return a curried function that returns "THIS IS NO SPACE CUBE!" when given 4, 2, and then 5 
+      Expected:
+
+      Actual:
+
+
+    should return a curried function that returns "SPACE CUBE DETECTED!!" when given 5, 5, and then 5 
+      Expected:
+
+      Actual:
+
+
+
+Recursion exercises *X
+  Recursion 2 XX
+    should call click # times 
+      Expected:
+
+      Actual:
+
+
+      Expected:
+8
+      Actual:
+0
+
+    should call twist # times 
+      Expected:
+
+      Actual:
+
+
+      Expected:
+7
+      Actual:
+0
+
+
+Growing Functions exercises X
+  Growing 1 *X
+    should not have its logs changed 
+      Expected:
+The pigs need 4sq. ft.,The chickens need 16sq. ft.,The sheep need 9sq. ft.
+      Actual:
+Thepigsneed4sq. ft,Thechickenneed16sq. ft,Thesheepsneed9sq. ft
+
+
+Functions and Side Effects exercises XX
+  Side Effects 1 *X
+    should not call the functions that are not pure **
+      Expected:
+
+      Actual:
+function () {
+        var callData = {
+          object: this,
+          args: Array.prototype.slice.apply(arguments)
+        };
+
+        callTracker.track(callData);
+        var returnValue = spyStrategy.exec.apply(this, arguments);
+        callData.returnValue = returnValue;
+
+        return returnValue;
+      }
+
+  Side Effects 2 XX
+    should call the functions that are not pure 
+      Expected:
+
+      Actual:
+
+
+    should not call the functions that are pure 
+      Expected:
+
+      Actual:
+
+
+
+Minimum exercise XX*XX
+  should declare a function `min3` that is a member of `Exer` 
+    Expected:
+function
+    Actual:
+undefined
+
+  should declare function `min` that is a member of `Exer` 
+    Expected:
+function
+    Actual:
+undefined
+
+  Exer.min3() XXXX
+    should accept three parameters 
+      Expected:
+
+      Actual:
+
+
+    should return the minimum given -3, 2, and 22 
+      Expected:
+
+      Actual:
+
+
+    should return the minimum given 678, 4, and Infinity 
+      Expected:
+
+      Actual:
+
+
+    should return the minimum given 0, 12, and -Infinity 
+      Expected:
+
+      Actual:
+
+
+  Exer.min() XXXXX
+    should accept three parameters 
+      Expected:
+
+      Actual:
+
+
+    should return the minimum given 0 and 10 
+      Expected:
+
+      Actual:
+
+
+    should return the minimum given 10 and 0 
+      Expected:
+
+      Actual:
+
+
+    should return the minimum given -5 and 6 
+      Expected:
+
+      Actual:
+
+
+    should return the minimum given 1000, 100, and 10 
+      Expected:
+
+      Actual:
+
+
+
+Recursion exercise XXXXXX
+  should declare a function `isEven` as a member of `Exer` 
+    Expected:
+function
+    Actual:
+undefined
+
+  should declare a function `isFooDivByBar` as a member of `Exer` 
+    Expected:
+function
+    Actual:
+undefined
+
+  should declare a function `isDivisibleBy` as a member of `Exer` 
+    Expected:
+function
+    Actual:
+undefined
+
+  declares `isEven()`, a function that XXXXXX
+    should be recursive 
+      Expected:
+
+      Actual:
+
+
+      Expected:
+/Exer.isEven\(.+\)/gm
+      Actual:
+undefined
+
+    should accept one parameter 
+      Expected:
+
+      Actual:
+
+
+      Expected:
+/^\s*function\s*\(\s*\w+.*\s*\)\s*\{$/gm
+      Actual:
+undefined
+
+    should return true given an even number 
+      Expected:
+
+      Actual:
+
+
+      Expected:
+
+      Actual:
+
+
+    should return false given an odd number 
+      Expected:
+
+      Actual:
+
+
+      Expected:
+
+      Actual:
+
+
+    should return true given a negative even number 
+      Expected:
+
+      Actual:
+
+
+      Expected:
+
+      Actual:
+
+
+    should return false given a negative odd number 
+      Expected:
+
+      Actual:
+
+
+      Expected:
+
+      Actual:
+
+
+  declares `isFooDivByBar(), a function that XXXXX
+    should accept two parameters named `foo` and `bar` 
+      Expected:
+
+      Actual:
+
+
+      Expected:
+/^\s*function\s*\(\s*foo,\s*bar\s*\)\s*\{$/gm
+      Actual:
+undefined
+
+    should be recursive 
+      Expected:
+
+      Actual:
+
+
+      Expected:
+/Exer.isFooDivByBar\(.+,.+\)/gm
+      Actual:
+undefined
+
+    should not use modulo *
+      Expected:
+
+      Actual:
+
+
+    should return true if `foo` is divisible by `bar` 
+      Expected:
+
+      Actual:
+
+
+      Expected:
+
+      Actual:
+
+
+    should return false if `foo` is not divisible by `bar` 
+      Expected:
+
+      Actual:
+
+
+      Expected:
+
+      Actual:
+
+
+  declares `isDivisibleBy`, a function that XXX
+    should accept one parameter 
+      Expected:
+
+      Actual:
+
+
+    should return a function 
+      Expected:
+
+      Actual:
+
+
+    returns a function that XXXXXX
+      is recursive 
+        Expected:
+
+        Actual:
+
+
+        Expected:
+
+        Actual:
+
+
+      should not use modulo *
+        Expected:
+
+        Actual:
+
+
+      given 5 to `isDivisbleBy`, should return true when called with 225 
+        Expected:
+
+        Actual:
+
+
+        Expected:
+
+        Actual:
+
+
+      given 13 to `isDivisibleBy`, should return true when called with 91 
+        Expected:
+
+        Actual:
+
+
+        Expected:
+
+        Actual:
+
+
+      given 13 to `isDivisbleBy`, should return false when called with 92 
+        Expected:
+
+        Actual:
+
+
+        Expected:
+
+        Actual:
+
+
+      given 12 to `isDivisibleBy`, should return false when called with 6 
+        Expected:
+
+        Actual:
+
+
+        Expected:
+
+        Actual:
+
+
+
+Bean Counting exercise XXXXXX
+  should declare a function `countBs` as a member of `Exer` 
+    Expected:
+function
+    Actual:
+undefined
+
+  should delcare a function `countChar` as a member of `Exer 
+    Expected:
+function
+    Actual:
+undefined
+
+  should declare a function `countCharX` as a member of `Exer` 
+    Expected:
+function
+    Actual:
+undefined
+
+  function `countBs XX
+    given the string "BBC", should return the number of capital "B"s 
+      Expected:
+
+      Actual:
+
+
+    given the string "Babbling Baby Boy Bees", should return the number of capital "B"s 
+      Expected:
+
+      Actual:
+
+
+  function `countChar` XXX
+    should expect two parameters 
+      Expected:
+
+      Actual:
+
+
+    given the string "Babbling Baby Boy Bees" and the letter "b", should return the number of lower-case "b"s 
+      Expected:
+
+      Actual:
+
+
+    given the string "camelCaseChampionshipCupContestant" and the letter "C", should return the number of capital "C"s 
+      Expected:
+
+      Actual:
+
+
+  function `countCharX` XXX
+    should expect one parameter 
+      Expected:
+
+      Actual:
+
+
+    should return a function 
+      Expected:
+
+      Actual:
+
+
+    returns a function that XXX
+      should expect one parameter 
+        Expected:
+
+        Actual:
+
+
+      given `countCharX("b")` and the argument "Babbling Baby Boy Bees", should return the number of lower-case "b"s  
+        Expected:
+
+        Actual:
+
+
+      given `countCharX("C")` and the argument "camelCaseChampionshipCupContestant", should return the number of capital "C"s 
+        Expected:
+
+        Actual:
+
+
+
+The following was logged:
+The Log Says: I'm a secret passphrase!
+Defining 3:
+289
+THIS IS NO SPACE CUBE!
+SPACE CUBE DETECTED!!
+THIS IS NO SPACE CUBE!
+Declaration 1:
+You gotta believe!
+Declaration 2:
+Kick, punch, block! It's all in the mind!
+STACK 1 & 2:
+2
+durian
+3
+Key Pressed: up
+Key Pressed: up
+Key Pressed: down
+Key Pressed: down
+Key Pressed: left
+Key Pressed: right
+Key Pressed: left
+Key Pressed: right
+Key Pressed: B
+Key Pressed: A
+Key Pressed: select
+Key Pressed: start
+Thepigsneed4sq. ft
+Thechickenneed16sq. ft
+Thesheepsneed9sq. ft

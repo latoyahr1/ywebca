@@ -22,7 +22,7 @@ and attach `check.txt` to the appropriate card on Trello.
 * [Recursion](#recrusion-exercise)
 * [Bean Counting](#bean-counting)
 
-<br>Minimum<a/ >
+<br / >
 
 * * *
 
